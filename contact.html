@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CONTACT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- on load -->
+<div class="preLoad">
+	<div class="wrapp">
+		<div class="preloadContent">
+			<img src="images/thunder-logo.png" alt="thunder-logo">
+			<div class="spiner"></div>
+		</div>
+	</div>
+</div>
+<!-- end on load -->
+
+<!-- HEADER -->
+	<header>
+		<div class="container-fluid headerBgr">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 logo">
+				<a href="index.html"><img src="images/thunder-logo.png" alt="thunder-logo"></a>
+			</div>
+			<div class="col-xs-9 col-sm-9 col-md-9col-lg-9 navigation">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				    </div>
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li><a href="index.html">ABOUT US <span class="sr-only">(current)</span></a></li>
+				        <li><a href="services.html">SERVICES</a></li>
+				        <li><a href="career.html">CAREER</a></li>
+				        <li><a href="courses.html">QA COURSE</a></li>
+				        <li class="active"><a href="contact.html">CONTACT US</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				</nav>
+			</div>
+		</div>
+	</header>
+<!-- end HEADER -->
+
+<!-- CONTACT -->
+<section class="contact">
+	<div class="container">
+		<h1><strong>CONTACT</strong></h1>
+		<div class="col-sm-6 col-md-3 col-lg-3 text-center box">
+			<div class="boxIcon">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+			</div>
+			<div class="boxContent">
+				<h3>PHONE</h3>
+				<a href="tel:+381604285248">060 428 52 48</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-3 col-lg-3 text-center box">
+			<div class="boxIcon">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</div>
+			<div class="boxContent">
+				<h3>MAIL</h3>
+				<a href="mailto:thundersolution@gmail.com">thundersolution@gmail.com</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-3 col-lg-3 text-center box">
+			<div class="boxIcon">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+			</div>
+			<div class="boxContent">
+				<h3>ADDRESS</h3>
+				<p>bb 1, Belgrade</p>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-3 col-lg-3 text-center box">
+			<div class="boxIcon">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+			</div>
+			<div class="boxContent">
+				<h3>ADDRESS</h3>
+				<p>bb 2, New York</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6 contactForm">
+				<h3><strong>Send us mail</strong></h3>
+				<form>
+					<div class="form-group">
+						<label for="name">Full name</label>
+						<input type="text" id="name" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					<div class="form-group">
+						<label for="phone">Telephone</label>
+						<input type="text" class="form-control" id="phone">
+					</div>
+					<div class="form-group">
+						<label for="subject">Subject</label>
+						<input type="text" class="form-control" id="subject">
+					</div>
+					<div class="form-group">
+    					<label for="msg">Message</label>
+    					<textarea class="form-control" id="msg" rows="7"></textarea>
+  					</div>
+						<button type="button" class="btn btn-primary" id="submit">Send</button>
+				</form>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div id="bel"></div>
+				<hr>
+				<div id="les"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end CONTACT -->
+
+<!-- FOOTER -->
+<footer class="text-center">
+	<div class="container">
+		<p>All Rights Reserved © THUNDER SOLUTION | bb 1, Beograd</p>
+	</div>
+</footer>
+<!-- end FOOTER -->
+
+	 <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtvJCg4PK5KL6lJSowsR9n4do9M6LxDSU&amp;callback=initMap">
+    </script>
+	<script src="contact.js"></script>
+</body>
+</html>
+

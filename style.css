@@ -1,0 +1,470 @@
+@font-face{
+    font-family: dosis;
+    src:url(fonts/Dosis-Regular.ttf);
+}
+@font-face{
+    font-family: dosisBold;
+    src:url(fonts/Dosis-Bold.ttf);
+}
+body{
+    font-family: dosis;
+    color: #000;
+    background-color: #f8f8f8;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 16px;
+}
+.preLoad{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    position: fixed;
+    z-index: 999;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.wrapp{
+    position: relative;
+}
+.preloadContent{
+    position: absolute;
+    left: 50%;
+    margin-top: 10%;
+    transform: translateX(-50%);
+}
+.preLoad img{
+    display: block;
+    width: 300px;
+    padding-bottom: 50%;
+}
+.spiner{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-top: 2px solid #2086cf;
+    border-radius: 100%;
+    animation: spin 0.5s linear infinite;
+}
+@keyframes spin{
+    from{ transform:rotate(0deg) }
+    to{ transform: rotate(360deg) }
+}
+/**********************************index.html***************************/
+.headerBgr{
+    background: rgb(29, 20, 4);
+    padding: 20px 0;
+    border-bottom: 3px solid #fff;
+}
+.logo img{
+    width: 80px;
+}
+nav{
+    background: transparent!important;
+    border: none!important;
+    border-radius: 0!important;
+    float: right;
+    margin: 0!important;
+}
+nav a{
+    font-family: dosisBold;
+    font-size: 15px;
+    color: #fff!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+nav a:hover{
+     color: #2086cf!important;
+}
+.active a{
+    color: #2086cf!important;
+    background: transparent!important;
+}
+.hamburger{
+    border: none;
+}
+.hamburger span{
+    background: #fff!important; 
+}
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover{
+    background: none!important;
+}
+/*********
+SLIDER
+**********/
+.item img{
+    width: 100%;
+}
+.carousel-caption{
+    top: 50%;
+}
+.carousel-caption h1{
+    display: inline-block;
+    font-size: 80px;
+    letter-spacing: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    transform: translateX(-1550px);
+    transition: 0.5s cubic-bezier(0.985, 0.005, 0.265, 1) 2s;
+    -webkit-transition: 0.5s cubic-bezier(0.985, 0.005, 0.265, 1) 2s;
+    -moz-transition: 0.5s cubic-bezier(0.985, 0.005, 0.265, 1) 2s;
+    -o-transition: 0.5s cubic-bezier(0.985, 0.005, 0.265, 1) 2s;
+}
+/*********
+ABOUT US
+**********/
+.aboutUSText{
+    color: rgba(0, 0, 0, 0.87);
+    padding-top: 50px;
+    line-height: 2;
+}
+.aboutUSText p a{
+    font-weight: 900;
+    color: #2086cf;
+}
+.aboutUSText h2{
+    color: #000;
+    margin: 0 0 25px 0;
+}
+.aboutUsLogo{
+    padding-top: 7%;
+}
+.aboutUsLogo img{
+    width: 100%;
+}
+.missionVision{
+   padding-top: 50px;
+}
+.missionVision h2{
+    color: #000;
+    margin: 0 0 25px 0;
+}
+.missionVision img{
+    width: 100%;
+}
+.paragrafs{
+    padding-top: 50px;
+}
+.paragrafs p{
+    font-size: 16px;
+}
+.paragrafs p:not(:first-child){
+    padding-top: 2%;
+}
+.paragrafs p:nth-child(1), .paragrafs p:nth-child(3), .paragrafs p:nth-child(5){
+    padding-left: 10%;
+}
+.wrappImg{
+    padding-top: 50px; 
+    padding-bottom: 25px;
+}
+.wrappImg img{
+    width: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+/*********
+FOOTER
+**********/
+footer{
+    font-size: 12px;
+    color: #fff;
+    background-color: #1e1d1d;
+    padding: 10px 0;
+}
+footer p:nth-child(2){
+    color: #353535;
+}
+/**********************************services.html***************************/
+.main{
+    background: url("images/lightning-flash-storms-green-1.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.transparentBgr{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15% 0;
+}
+.main h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.main .text p{
+    font-size: 16px;
+}
+.main .text p:nth-child(2){
+    margin-bottom: 30px;
+}
+.bottom{
+    padding-bottom: 25px;
+}
+.bottom .experts{
+    padding-top: 25px;
+}
+.bottom .experts h2{
+    margin-bottom: 40px;
+}
+.bottom .experts ul{
+    font-size: 16px;
+    padding-left: 15px;
+}
+.bottom .right img{
+    width: 100%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+.bottom .right img:hover{
+    transform: scale(1.1);
+}
+.owerflow{
+    overflow: hidden;
+}
+.bottom .right{
+    padding-top: 25px;
+}
+/**********************************career.html***************************/
+.career{
+    background: url("images/lightning-flash-storms-green-2.jpg") no-repeat;
+    background-size: cover;
+}
+.career ul{
+    padding-left: 15px;
+}
+.career ul li{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.belgrade{
+     background: #ccc;
+     padding-top: 25px;
+}
+.belgrade h3, .leskovac h3{
+    font-family: dosisBold;
+}
+.belgrade form, .leskovac form{
+    padding: 1% 10% 10% 10%;
+}
+#arrowBlack, #arrowWhite{
+    cursor: pointer;
+    margin: 5% 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+.leskovac{
+     color: #fff;
+     background: #000;
+     padding-top: 25px;
+}
+/**********************************qa-course.html***************************/
+.course{
+    background: url("images/lightning-flash-storms-green-3.jpg") no-repeat;
+    background-size: cover;
+}
+.bottom .experts p{
+    margin:0;
+}
+.qaButton{
+    font-size: 22px;
+    color: #fff;
+    background: #42af95;
+    width: 400px;
+    border-radius: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+/**********************************qa-course.html***************************/
+.contact{
+    padding-top: 25px;
+}
+.contact h1{
+    margin-bottom: 40px;
+}
+.box{
+    position: relative;
+    padding-left: 0;
+}
+.box:hover .boxIcon i{
+    transform: rotate(360deg);
+}
+.boxIcon{
+    position: absolute;
+    top: -20px;
+    background: #016ab0;
+    width: 50px;
+    height: 50px;
+    padding-top: 13px;
+    border: 1px solid #004890;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.boxIcon i{
+    font-size: 25px;
+    color: #fff;
+     transition: 1s;
+     -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+}
+.boxContent{
+    font-family: dosisBold;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 5;
+    padding-top: 50px;
+}
+.boxContent a, .boxContent p{
+    font-size: 16px;
+    color: #016ab0;;
+}
+.contactForm{
+    padding-bottom: 25px;
+}
+.contactForm h3{
+    margin: 7% 0;
+}
+.form-control{
+    height: 45px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+}
+.form-control:focus{
+    border-color: #ccc;
+    box-shadow: none;
+}
+#submit{
+    width: 140px;
+    height: 50px;
+    background-color: #016ab0;
+    border-radius: 0;
+    transition: 0.5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+#submit:hover{
+    background: #55adbd;
+    border-color: #338b9b;
+}
+#bel, #les{
+    height: 300px;
+}
+#bel{
+    margin-top: 7%;
+}
+hr{
+    border-color: #e7e4e4;;
+}
+/*********
+MEDIA
+**********/
+@media (max-width: 1199px){
+    nav a{
+        font-size: 14px;
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+}
+@media (max-width: 991px){
+    nav a{
+        font-size: 12px;
+        padding-left: 8px!important;
+        padding-right: 8px!important;
+    }
+    .carousel-caption{
+        top: 40%;
+    }
+    .paragrafs{
+        text-align: center;
+    }
+    .paragrafs p:nth-child(1), .paragrafs p:nth-child(3), .paragrafs p:nth-child(5){
+        padding-left: 0;
+    }
+    .wrappImg img{
+        opacity: 1;
+        transform: scale(1);
+    }
+    .box{
+        margin-top: 25px;
+    }
+}
+@media (max-width: 767px){
+    nav{
+        float: none;
+    }
+    .carousel-caption h1{
+        font-size: 60px;
+    }
+    .eng{
+        padding-left: 8px!important;
+    }
+    .box{
+        padding-right: 0;
+    }
+    #les{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 575px){
+    h2{
+        font-size: 30px;
+    }
+      .mainServices h1{
+        font-size: 40px;
+    }
+    .mainServices .text p{
+        font-size: 14px;
+    }
+    .aboutUSText h2, .missionVision h2{
+        font-size: 30px;
+    }
+    .carousel-caption{
+        top: 25%;
+    }
+     .carousel-caption h1{
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+  .aboutUSText, .missionVision, .paragrafs, .wrappImg{
+    padding-top: 25px;
+  }
+  .qaButton{
+    width: 240px;
+  }
+}
+@media (max-width: 425px){
+    .carousel-caption{
+        top: 20%;
+    }
+    .carousel-caption h1{
+        letter-spacing: -3px;
+        line-height: 1.5;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+}
